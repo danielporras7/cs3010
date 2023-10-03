@@ -1,0 +1,10 @@
+The results of the Naive Gaussian Elimination method and the Gaussian 
+Elimination with the Scaled Partial Pivoting method are identical. Although it is the same in this instance, 
+I have tested in other systems and these two methods can yield results that differ by a small error. 
+This variation may be caused by numerical errors that can happen during computations. 
+Each element is divided by the pivot element in naive Gaussian elimination, which can result in accuracy loss and solution mistakes. 
+By choosing the pivot element as the largest element in the column divided by the scaling factor for that row, 
+Scaled Partial Pivoting attempts to reduce these inaccuracies. 
+However, there are some cases showing that SPP can yield a result having a slight numerical error by a very small fraction,
+ while the Naive Gaussian method gave a more accurate answer.
+ 
